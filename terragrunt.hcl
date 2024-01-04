@@ -34,6 +34,12 @@ provider "aws" {
   profile = "${local.profile_name}"
   region  = "${local.region}"
 }
+
+provider "aws" {
+  alias = "global"
+  profile = "${local.profile_name}"
+  region  = "us-east-1"
+}
 EOF
 
 }
