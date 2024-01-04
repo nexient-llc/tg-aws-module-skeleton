@@ -36,7 +36,7 @@ provider "aws" {
 }
 
 provider "aws" {
-  alias = "global"
+  alias   = "global"
   profile = "${local.profile_name}"
   region  = "us-east-1"
 }
