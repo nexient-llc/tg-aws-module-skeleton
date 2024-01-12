@@ -7,22 +7,22 @@ envs:
         - us-east-2:
             instances:
               - "000"
-      aws_profile: aws-user-profile-dev
+      profile: aws-user-profile-dev
   - qa:
       regions:
         - us-east-2:
             instances:
               - "000"
-      aws_profile: aws-user-profile-qa
+      profile: aws-user-profile-qa
   - uat:
       regions:
         - us-east-2:
             instances:
               - "000"
-      aws_profile: aws-user-profile-uat
+      profile: aws-user-profile-uat
   - prod:
       regions:
         - us-east-2:
             instances:
               - "000"
-      aws_profile: aws-user-profile-prod
+      profile: aws-user-profile-prod

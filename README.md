@@ -29,7 +29,7 @@ envs:
         - <<region_1>>:
             instances:
               - "<<instance number>>"
-      aws_profile: <<aws profile used for authentication to connect to aws platform>>
+      profile: <<aws profile used for authentication to connect to aws platform>>
 ```
 
 `skeleton.yaml`(located at the root of the repository) is example file that generates terragrunt configurations for `dev`, `qa`, `uat`, `prod` environments, one instance each ("000") in `us-east-2` region. The terragrunt configuration is generated to deploy `s3 bucket` using wrapper module `tf-aws-wrapper_module-s3_bucket` and naming_prefix `demo-101`.
